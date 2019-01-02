@@ -1,6 +1,8 @@
 ﻿using SaintCoinach;
 using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Text.RegularExpressions;
 
 namespace ge_wiki_parser.Parser
 {
@@ -22,6 +24,34 @@ namespace ge_wiki_parser.Parser
         public void Parse(string[] args)
         {
             throw new NotImplementedException( "Parser does not implement the parse method." );
+        }
+
+        public void SaveToTemplate( string templateName, string outputName, Dictionary<string, object> data )
+        {
+            string basePath = Path.GetDirectoryName( System.Reflection.Assembly.GetEntryAssembly().Location );
+            string templatePath = Path.Combine( basePath, "OutputFormats", $"{templateName}.txt" );
+            string outputPath = Path.Combine( basePath, "Output" );
+            
+            if( !Directory.Exists ( outputPath  ) )
+            {
+                Directory.CreateDirectory( outputPath );
+            }
+
+            string output = File.ReadAllText( templatePath );
+
+            // replace substitutions in template with values
+            foreach( var item in data )
+            {
+                output = output.Replace( $"{{{item.Key}}}", item.Value.ToString() );
+            }
+
+            // remove any template params not set in the data dict
+            string pattern = @"\{[a-z_0-9]+\}";
+            output = Regex.Replace( output, pattern, "" );
+
+            //Console.WriteLine( "Writing output to: {0}", templatePath );
+
+            File.WriteAllText( Path.Combine( outputPath, outputName ), output );
         }
 
         protected readonly string m_dataPath;

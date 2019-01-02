@@ -1,1 +1,85 @@
-﻿
+﻿{{ARR Infobox Item
+| Patch = 4.0
+| Index            = {id}
+| Rarity           = {rarity}
+| Name             = {{subst:PAGENAME}}
+| Subheading       =
+| Description      = {description}
+| Slots            = {test1}
+| Stack            = {test2}
+| Requires         =
+| Gender           =
+| Required Level   =
+| Item Level       = {itemlevel}
+| Other Conditions =
+| Untradable       = {untradable}
+| Unique           =
+| Convertible      =
+| Sells            =
+| Dye Allowed      =
+| Crest Allowed    =
+| Repair Class     =
+| Desynthesizable  = <!-- 'No' if not Desynthable. Then create /Desynth subpage with Template:ARR Infobox Desynth -->
+| Collectable      = <!-- 'Yes' if Collectable. Then create /Collectable subpage with Template:Collectable -->
+| Reducible        = <!-- 'Yes' if Aetherial Reducible. Place Template:ARR Infobox Reduction somewhere on this page. -->
+| HQ               = <!-- Defaults to 'Yes'. Delete line or leave blank if HQ. Otherwise, put 'No' -->
+| Custom <!-- Variable --> = <!-- Takes a variable to the left of the equals sign (multiple words must have an underscore) and another to the right and places them in the right box - takes interwiki links on both sides -->
+
+<!--Gathering Section. Remove if item is not received by DoL classes from gathering nodes -->
+| GatheringHeight  = <!-- Position in Gathering window this item is located, 1-8 or 'Random' if Hidden item -->
+| RecommendedLevel = <!-- Level listed next to item in the Gathering window -->
+| ProspectingHQ    = <!-- Use the 'Preparation' ability to find this number and place here. Or put 'N/A' -->
+
+| Physical Damage    = <!-- Weapons need this AND Magical Damage. If not known, put '1' -->
+| Physical Damage HQ =
+| Magic Damage    = <!-- Weapons need this AND Physical Damage. If not known, put '1' -->
+| Magic Damage HQ =
+| Defense         =
+| Defense HQ      =
+| Magic Defense    =
+| Magic Defense HQ =
+| Block Strength    =
+| Block Strength HQ =
+| Block Rate      =
+| Block Rate HQ   =
+| Auto-attack     =
+| Auto-attack HQ  =
+| Delay           =
+
+| Bonus <!--_______-->  = <!-- +/-#, Effects with multiple words, such as Skill Speed must have an underscore. i.e. Skill_Speed -->
+| Bonus <!--_______--> HQ = <!-- +/-#, Same as above. If item is HQ, indicate Bonus HQ stat here with underscore. i.e. Skill_Speed HQ -->
+| Bonus <!--_______--> Latent =
+| Bonus <!--_______--> Conditions =
+
+| Duration  =
+| Recast    =
+| Recast HQ =
+| Consumable <!--_______--> = <!-- +/-#, Effects with multiple words, such as Skill Speed must have an underscore. i.e. Skill_Speed -->
+| Consumable <!--_______--> HQ = <!-- Same as above. If consumable item is HQ, indicate HQ info here with an underscore. i.e. Skill_Speed HQ -->
+| Consumable <!--_______--> Cap =
+| Consumable <!--_______--> Cap HQ =
+
+| Set             =
+| Set Requirement =
+| Set Bonus       =
+
+<!-- Desynth Recipe location has changed. See Template:ARR Infobox Desynth/Documentation for info -->
+<!-- Crafting Recipe location has changed. See Template:ARR Infobox Recipe/Documentation for info -->
+<!-- For Collectable items see Template:Collectable -->
+
+|FishType       =     <!-- Coastlines, Deep Sea, Rivers, etc -->
+|FishSizeLarge  =     <!-- Largest caught size of fish observed -->
+|FishSizeSmall  =     <!-- Smallest caught size of fish observed -->
+|PrimeLocations =     <!-- Prime location, as shown in fishing log -->
+|Bait           =     <!-- Baits used to catch fish.  Comma delineated -->
+|Recommended Level =  <!-- The 'level' of the fish as it appears in the fishing log -->
+|Fishing Log Description = <!-- Logbook description, as it appears in the fishing log -->
+<!-- Fishing location/weather/mooch status/etc should go onto the Fishing Hole page -->
+
+| Miscellaneous Use =
+| Miscellaneous Acquisition =
+
+| Gallery =
+| Notes =
+| Etymology =
+}}

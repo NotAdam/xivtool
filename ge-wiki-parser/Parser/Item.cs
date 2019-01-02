@@ -21,23 +21,23 @@ namespace ge_wiki_parser.Parser
             }
 
             var itemid = int.Parse( args[ 0 ] );
-            var outDict = new Dictionary<string, string>();
+            var outDict = new Dictionary<string, object>();
 
             var sheetEn = m_languageData[ SaintCoinach.Ex.Language.English ].GameData.Items;
             var sheetJp = m_languageData[ SaintCoinach.Ex.Language.Japanese ].GameData.Items;
             var sheetDe = m_languageData[ SaintCoinach.Ex.Language.German ].GameData.Items;
 
-            var item = sheetEn[ itemid ];
-
-            outDict[ "id" ] = itemid.ToString();
+            outDict[ "id" ] = itemid;
             outDict[ "name_en" ] = sheetEn[ itemid ].Name;
             outDict[ "name_jp" ] = sheetJp[ itemid ].Name;
             outDict[ "name_de" ] = sheetDe[ itemid ].Name;
 
-            foreach( var entry in outDict )
-            {
-                System.IO.File.AppendAllText( "out.txt", $"{entry.Key}\t\t{entry.Value}\n" );
-            }
+            outDict[ "description" ] = sheetEn[ itemid ].GetRaw( "Description" );
+            outDict[ "itemlevel" ] = sheetEn[ itemid ].GetRaw( "Level{Item}" );
+            outDict[ "rarity" ] = sheetEn[ itemid ].GetRaw( "Rarity" );
+            outDict[ "untradable" ] = sheetEn[ itemid ].GetRaw( "IsUntradable" );
+
+            SaveToTemplate( "Item", $"Item{itemid}.txt", outDict );
         }
     }
 }
