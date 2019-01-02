@@ -46,7 +46,7 @@ namespace ge_wiki_parser.Parser
             }
 
             // remove any template params not set in the data dict
-            string pattern = @"\{[a-z_0-9]+\}";
+            string pattern = @"\{[a-zA-Z_0-9]+\}";
             output = Regex.Replace( output, pattern, "" );
 
             //Console.WriteLine( "Writing output to: {0}", templatePath );

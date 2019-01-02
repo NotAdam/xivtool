@@ -3,26 +3,27 @@
 | Index            = {id}
 | Rarity           = {rarity}
 | Name             = {{subst:PAGENAME}}
-| Subheading       =
+| Subheading       = {subheading}
 | Description      = {description}
-| Slots            = {test1}
-| Stack            = {test2}
-| Requires         =
+| Slots            = {materiaslots}
+| Stack            = {stackSize}
+| Requires         = {requires}
 | Gender           =
-| Required Level   =
+| Required Level   = {requiredlevel}
 | Item Level       = {itemlevel}
 | Other Conditions =
 | Untradable       = {untradable}
-| Unique           =
-| Convertible      =
-| Sells            =
-| Dye Allowed      =
-| Crest Allowed    =
-| Repair Class     =
+| Unique           = {unique}
+| Convertible      = {convertable}
+| Sells            = {sells}
+| Dye Allowed      = {dyeable}
+| Crest Allowed    = {iscrestworthy}
+| Repair Class     = {repairclass}
+| Advanced Melds   = {advancedmelds} 
 | Desynthesizable  = <!-- 'No' if not Desynthable. Then create /Desynth subpage with Template:ARR Infobox Desynth -->
 | Collectable      = <!-- 'Yes' if Collectable. Then create /Collectable subpage with Template:Collectable -->
 | Reducible        = <!-- 'Yes' if Aetherial Reducible. Place Template:ARR Infobox Reduction somewhere on this page. -->
-| HQ               = <!-- Defaults to 'Yes'. Delete line or leave blank if HQ. Otherwise, put 'No' -->
+| HQ               = {canbehq}
 | Custom <!-- Variable --> = <!-- Takes a variable to the left of the equals sign (multiple words must have an underscore) and another to the right and places them in the right box - takes interwiki links on both sides -->
 
 <!--Gathering Section. Remove if item is not received by DoL classes from gathering nodes -->
@@ -30,26 +31,23 @@
 | RecommendedLevel = <!-- Level listed next to item in the Gathering window -->
 | ProspectingHQ    = <!-- Use the 'Preparation' ability to find this number and place here. Or put 'N/A' -->
 
-| Physical Damage    = <!-- Weapons need this AND Magical Damage. If not known, put '1' -->
+| Physical Damage    = {physdmg}<!-- Weapons need this AND Magical Damage. If not known, put '1' -->
 | Physical Damage HQ =
-| Magic Damage    = <!-- Weapons need this AND Physical Damage. If not known, put '1' -->
+| Magic Damage    = {magdmg} <!-- Weapons need this AND Physical Damage. If not known, put '1' -->
 | Magic Damage HQ =
-| Defense         =
+| Defense         = {physdef}
 | Defense HQ      =
-| Magic Defense    =
+| Magic Defense    = {magdef}
 | Magic Defense HQ =
-| Block Strength    =
+| Block Strength    = {blockstr}
 | Block Strength HQ =
-| Block Rate      =
+| Block Rate      = {blockrate}
 | Block Rate HQ   =
-| Auto-attack     =
+| Auto-attack     = {autoattackdmg}
 | Auto-attack HQ  =
-| Delay           =
+| Delay           = {attackdelay}
 
-| Bonus <!--_______-->  = <!-- +/-#, Effects with multiple words, such as Skill Speed must have an underscore. i.e. Skill_Speed -->
-| Bonus <!--_______--> HQ = <!-- +/-#, Same as above. If item is HQ, indicate Bonus HQ stat here with underscore. i.e. Skill_Speed HQ -->
-| Bonus <!--_______--> Latent =
-| Bonus <!--_______--> Conditions =
+{bonusstats}
 
 | Duration  =
 | Recast    =
