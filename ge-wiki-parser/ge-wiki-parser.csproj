@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="Parser\BaseParser.cs" />
     <Compile Include="Parser\Item.cs" />
+    <Compile Include="Parser\UpdateReport.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
