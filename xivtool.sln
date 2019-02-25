@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ge-wiki-parser", "ge-wiki-parser\ge-wiki-parser.csproj", "{E4B33DBD-461B-40A0-B5CF-F73B6412E95E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xivtool", "xivtool\xivtool.csproj", "{E4B33DBD-461B-40A0-B5CF-F73B6412E95E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaintCoinach", "SaintCoinach\SaintCoinach\SaintCoinach.csproj", "{8A7D65EB-3DE3-4631-B286-CC73A3126002}"
 EndProject

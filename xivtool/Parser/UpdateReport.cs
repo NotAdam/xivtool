@@ -1,11 +1,13 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ge_wiki_parser.Parser
+namespace xivtool.Parser
 {
+    [Description("Attempts to automagically update ex.json using the SaintCoinach built in diff tool")]
     class UpdateReport : BaseParser
     {
         public UpdateReport( string filePath ) : base( filePath )

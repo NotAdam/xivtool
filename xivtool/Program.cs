@@ -5,22 +5,39 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Reflection;
 
-namespace ge_wiki_parser
+namespace xivtool
 {
     class Program
     {
         static void PrintHelp()
         {
-            Console.WriteLine( "ge-wiki-parser <data path> <module> [module args...]" );
+            Console.WriteLine( "xivtool <data path> <module> [module args...]" );
+
+            Console.WriteLine();
+            Console.WriteLine( "Available modules: " );
+
+            var assembly = Assembly.GetEntryAssembly();
+
+            var parsers = assembly.GetTypes().Where( t => t.Namespace == "xivtool.Parser" );
+
+            foreach( var parser in parsers )
+            {
+                var desc = parser.GetCustomAttribute<System.ComponentModel.DescriptionAttribute>();
+
+                if( desc == null )
+                    continue;
+
+                Console.WriteLine( "  {0} - {1}", parser.Name, desc.Description );
+            }
         }
 
         static void Main( string[] args )
         {
-            Console.OutputEncoding = System.Text.Encoding.UTF8;
+            Console.OutputEncoding = Encoding.UTF8;
 
             if( args.Length < 2 )
             {
-                Console.WriteLine( "Missing arguments." );
+                Console.WriteLine( "Error: Missing arguments.\n" );
                 PrintHelp();
 
                 return;
@@ -38,7 +55,7 @@ namespace ge_wiki_parser
             var assembly = Assembly.GetEntryAssembly();
             var parserType = assembly.GetTypes().First( 
                 t => t.Name.ToLower() == args[ 1 ].ToLower() && 
-                t.Namespace == "ge_wiki_parser.Parser"
+                t.Namespace == "xivtool.Parser"
             );
 
             var parser = Activator.CreateInstance( parserType, args[ 0 ] );

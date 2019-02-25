@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text.RegularExpressions;
 
-namespace ge_wiki_parser.Parser
+namespace xivtool.Parser
 {
     public class BaseParser
     {

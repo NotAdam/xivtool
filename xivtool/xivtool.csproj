@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{E4B33DBD-461B-40A0-B5CF-F73B6412E95E}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ge_wiki_parser</RootNamespace>
-    <AssemblyName>ge-wiki-parser</AssemblyName>
+    <RootNamespace>xivtool</RootNamespace>
+    <AssemblyName>xivtool</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="Parser\BaseParser.cs" />
     <Compile Include="Parser\Item.cs" />
+    <Compile Include="Parser\RadiusCalc.cs" />
     <Compile Include="Parser\UpdateReport.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

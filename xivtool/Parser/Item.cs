@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ge_wiki_parser.Parser
+namespace xivtool.Parser
 {
+    [Description("Outputs gamerescape wiki template markup for items")]
     public class Item : BaseParser
     {
         public Item( string filePath ) : base( filePath )
