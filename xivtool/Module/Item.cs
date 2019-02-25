@@ -5,10 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace xivtool.Parser
+namespace xivtool.Module
 {
     [Description("Outputs gamerescape wiki template markup for items")]
-    public class Item : BaseParser
+    public class Item : BaseModule
     {
         public Item( string filePath ) : base( filePath )
         {

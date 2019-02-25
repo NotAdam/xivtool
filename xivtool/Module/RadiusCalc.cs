@@ -5,10 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace xivtool.Parser
+namespace xivtool.Module
 {
     [Description("Calculates the radius for BNpcs and the median radius for all of them")]
-    public class RadiusCalc : BaseParser
+    public class RadiusCalc : BaseModule
     {
         public RadiusCalc( string filePath ) : base( filePath ) { }
 

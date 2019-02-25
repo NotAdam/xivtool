@@ -5,10 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace xivtool.Parser
+namespace xivtool.Module
 {
     [Description("Attempts to automagically update ex.json using the SaintCoinach built in diff tool")]
-    class UpdateReport : BaseParser
+    class UpdateReport : BaseModule
     {
         public UpdateReport( string filePath ) : base( filePath )
         {

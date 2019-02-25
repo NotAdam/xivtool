@@ -4,11 +4,11 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text.RegularExpressions;
 
-namespace xivtool.Parser
+namespace xivtool.Module
 {
-    public class BaseParser
+    public class BaseModule
     {
-        public BaseParser( string dataPath )
+        public BaseModule( string dataPath )
         {
             m_dataPath = dataPath;
             m_languageData = new Dictionary<SaintCoinach.Ex.Language, ARealmReversed>();

@@ -1,4 +1,4 @@
-# ge-wiki-parser
+# xivtool
 
 Parses game data and spits out wiki formatting. Deals with localised strings by providing an interface to all sheets at the same time. MULTI LANGUAGE DRIFTING
 
@@ -9,7 +9,7 @@ todo: fix this readme lol
 
 ## Usage
 
-    ge-wiki-parser <data path> <parser name> [module] [args] [here...]
+    xivtool <data path> <parser name> [module] [args] [here...]
     
 ## Notes
 

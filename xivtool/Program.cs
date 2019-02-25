@@ -18,7 +18,7 @@ namespace xivtool
 
             var assembly = Assembly.GetEntryAssembly();
 
-            var parsers = assembly.GetTypes().Where( t => t.Namespace == "xivtool.Parser" );
+            var parsers = assembly.GetTypes().Where( t => t.Namespace == "xivtool.Module" );
 
             foreach( var parser in parsers )
             {
@@ -55,7 +55,7 @@ namespace xivtool
             var assembly = Assembly.GetEntryAssembly();
             var parserType = assembly.GetTypes().First( 
                 t => t.Name.ToLower() == args[ 1 ].ToLower() && 
-                t.Namespace == "xivtool.Parser"
+                t.Namespace == "xivtool.Module"
             );
 
             var parser = Activator.CreateInstance( parserType, args[ 0 ] );

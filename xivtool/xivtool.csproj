@@ -44,10 +44,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Parser\BaseParser.cs" />
-    <Compile Include="Parser\Item.cs" />
-    <Compile Include="Parser\RadiusCalc.cs" />
-    <Compile Include="Parser\UpdateReport.cs" />
+    <Compile Include="Module\BaseModule.cs" />
+    <Compile Include="Module\Item.cs" />
+    <Compile Include="Module\RadiusCalc.cs" />
+    <Compile Include="Module\UpdateReport.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -61,10 +61,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Parser\OutputFormats\Item.txt" />
+    <Content Include="Module\OutputFormats\Item.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>XCOPY "$(ProjectDir)Parser\OutputFormats" "$(TargetDir)\OutputFormats\" /S /Y</PostBuildEvent>
+    <PostBuildEvent>XCOPY "$(ProjectDir)Module\OutputFormats" "$(TargetDir)\OutputFormats\" /S /Y</PostBuildEvent>
   </PropertyGroup>
 </Project>
