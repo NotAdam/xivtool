@@ -13,4 +13,4 @@ todo: fix this readme lol
     
 ## Notes
 
-* Parsers are located in the Parsers namespace and only parsers inside that namespace can be used.
+* Modules are located in the `Module` namespace and only modules inside that namespace can be used.
