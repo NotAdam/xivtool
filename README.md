@@ -4,12 +4,11 @@ Parses game data and does things with that data with semi-pluggable modules. Dea
 
 Partially based upon an older project to port all the data to a SQL db
 
-todo: fix this readme lol
-
-
 ## Usage
 
-    xivtool <data path> <parser name> [module] [args] [here...]
+    xivtool <data path> <module name> [module [args [go [here]]]]
+    
+Modules should complain if required arguments are missing.
     
 ## Notes
 
